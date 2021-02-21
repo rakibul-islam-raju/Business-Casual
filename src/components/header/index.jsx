@@ -1,3 +1,4 @@
+import { Link } from '@reach/router';
 import React from 'react';
 
 function header() {
@@ -9,12 +10,12 @@ function header() {
 
             <nav className="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
                 <div className="container">
-                    <a
+                    <Link
                         className="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none"
-                        href="/"
+                        to="/"
                     >
                         Business Casual
-                    </a>
+                    </Link>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -29,28 +30,28 @@ function header() {
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item active px-lg-4">
-                                <a className="nav-link text-uppercase text-expanded" href="/">
+                                <Link className="nav-link text-uppercase text-expanded" to="/">
                                     Home
                                     <span className="sr-only">(current)</span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item active px-lg-4">
-                                <a className="nav-link text-uppercase text-expanded" href="/about">
+                                <Link className="nav-link text-uppercase text-expanded" to="/about">
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item active px-lg-4">
-                                <a
+                                <Link
                                     className="nav-link text-uppercase text-expanded"
-                                    href="/products"
+                                    to="/products"
                                 >
                                     Products
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item active px-lg-4">
-                                <a className="nav-link text-uppercase text-expanded" href="/store">
+                                <Link className="nav-link text-uppercase text-expanded" to="/store">
                                     Store
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
